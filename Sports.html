@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Motivation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Workout & Sports Motivation</h1>
+        <p>Push your limits. Transform your life.</p>
+    </header>
+
+    <section>
+        <img src="https://cdn.pixabay.com/photo/2020/01/28/19/44/man-4800810_960_720.jpg" alt="Person working out">
+        <button onclick="generateQuote()">Get Motivated</button>
+        <p id="quote"></p>
+    </section>
+
+    <footer>
+        <a href="Mainpage.html">Back to Home</a>
+    </footer>
+
+    <script>const quotes = [
+      "No pain, no gain.",
+      "Your only limit is you.",
+      "Push yourself because no one else is going to do it for you.",
+      "Sweat now, shine later."
+    ];
+
+    function generateQuote() {
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById("quote").innerText = quotes[random];
+    }</script>
+</body>
+</html>
